@@ -55,3 +55,10 @@ p {
 footer.page-footer {
     margin-top: 5px;
 }
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #FFEB3B;
+    will-change: left, right;
+}
