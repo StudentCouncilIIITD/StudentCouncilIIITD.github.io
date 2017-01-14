@@ -8,15 +8,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--<script src="js/modernizr.custom.js"></script>-->
 </head>
 <body>
 <nav class="white" role="navigation">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="clublist.html">Club List</a></li>
+        <li class="divider"></li>
+        <li><a href="https://docs.google.com/a/iiitd.ac.in/forms/viewform?bc=transparent&embedded=true&f=Arial%252C%2BVerdana%252C%2Bsans-serif&hl=en&htc=%2523666666&id=1R_rG_qkfx3bgIRgMEAsFYjg-35c54F5rGMP4ccbNbc4&lc=%2523e41500&pli=1&tc=%2523000000&ttl=0">New Club Request</a></li>
+    </ul>
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"><img src="img/iiitd.png"></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1" href="clubs.html">Clubs<i class="material-icons right">arrow_drop_down</i>  </a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="hostel.html">Hostel</a></li>
             <li><a href="contacts.html">Contacts</a></li>
@@ -24,7 +31,19 @@
         <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">Club<i class="material-icons">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="clublist.html">Club List</a></li>
+                                <li><a href="https://docs.google.com/a/iiitd.ac.in/forms/viewform?bc=transparent&embedded=true&f=Arial%252C%2BVerdana%252C%2Bsans-serif&hl=en&htc=%2523666666&id=1R_rG_qkfx3bgIRgMEAsFYjg-35c54F5rGMP4ccbNbc4&lc=%2523e41500&pli=1&tc=%2523000000&ttl=0">New Club Request</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
             <li><a href="members.html">Members</a></li>
             <li><a href="hostel.html">Hostel</a></li>
             <li><a href="contacts.html">Contacts</a></li>
@@ -35,189 +54,172 @@
 <div id="index-banner" class="parallax-container valign-wrapper" style="background-color: rgba(0,0,0,.2);">
     <div class="section no-pad-bot">
         <div class="container">
-            <h1 class="header center white-text text-darken-2">Clubs At IIITD</h1>
+            <h1 class="header center white-text text-darken-2">Clubs Guidelines</h1>
         </div>
     </div>
     <div class="parallax"><img src="img/2.jpg" alt="background img 2" style="background-size: auto"></div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col s12">
-            <ul class="tabs darken-4 orange white-text">
-                <li class="tab col s3 "><a href="#test1" class="active white-text">Club List</a></li>
-                <li class="tab col s3 "><a  href="#test2" class="white-text">Club Guidelines</a></li>
-                <li class="tab col s3 "><a href="#test4" class="white-text">Form A new Club</a></li>
-            </ul>
-        </div>
-        <div id="test1" class="col s12">
-                <div class="row">
-                    <div class="col s4 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light" >
-                                <center><img class="activator responsive-img" src="img/byld.jpg" align="center" width="100px" height="100px"></center>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Byld<i class="material-icons right">more_vert</i></span>
-                                <p><a href="http://byld.iiitd.edu.in/">Website</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Byld<i class="material-icons right">close</i></span>
-                                <p>Byld is IIIT-D's software dev club. Byld exists to  foster a community  of individuals at IIIT-D who solve problems through the innovative use of technology.</p>
-                                <p><h4>Coordinators</h4>
-                                    <ul>
-                                        <li>Aneesh Dogra</li>
-                                        <li>Sambhav Satija</li>
-                                        <li>Ankur Singh</li>
-                                        <li>Gurshabad Grover</li>
-                                        <li>Lohitaksh Parmar</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s4 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light" >
-                                <img class="activator responsive-img" src="img/FooBar.png" width="100px" height="100px">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Foobar<i class="material-icons right">more_vert</i></span>
-                                <p><a href="foobar.iiitd.edu.in">Website</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Foobar<i class="material-icons right">close</i></span>
-                                <p>FooBar aims to promote programming as a culture among students by conducting weekly sessions (CodeClasses and contests). It also aims to improve performance of IIIT-D students in external contests.</p>
-                                <p><h4>Coordinators</h4>
-                                <ul>
-                                    <li>Ambar Pal</li>
-                                    <li>Aditi Mithal</li>
-                                    <li>Anmol Singh</li>
-                                    <li>Parth Mittal </li>
-                                    <li>Rounaq Jhunjhunu Wala</li>
-                                    <li>Satyam Kumar</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s4 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/astronuts.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Astronuts<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">Website</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Astronuts<i class="material-icons right">close</i></span>
-                                <p>stronuts, the astronomy club of IIIT-Delhi was started in October 2012 to provide a learning platform to students passionate about the skies above. By conducting night observations, organising quizzing competitions and group learning sessions, we seek to unravel the mysteries of the night! </p>
-                                <p><h4>Coordinators</h4>
-                                <ul>
-                                    <li>Shubhankar R Butta</li>
-                                    <li>Aryan Saini</li>
-                                    <li>Ekansh Sareen</li>
-                                    <li>Hasan Kamal </li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                <div class="row">
-                <div class="col s4 m4 l4">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light" >
-                            <center><img class="activator responsive-img" src="img/trivalis.jpg" align="center" width="100px" height="100px"></center>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Trivalis<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Trivalis<i class="material-icons right">close</i></span>
-                            <p>Byld is IIIT-D's software dev club. Byld exists to  foster a community  of individuals at IIIT-D who solve problems through the innovative use of technology.</p>
-                            <p><h4>Coordinators</h4>
-                            <ul>
-                                <li>Aneesh Dogra</li>
-                                <li>Sambhav Satija</li>
-                                <li>Ankur Singh</li>
-                                <li>Gurshabad Grover</li>
-                                <li>Lohitaksh Parmar</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light" >
-                            <img class="activator responsive-img" src="img/machaan.png" width="100px" height="100px">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Maachan<i class="material-icons right">more_vert</i></span>
-                            <p><a href="foobar.iiitd.edu.in">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Maachan<i class="material-icons right">close</i></span>
-                            <p>FooBar aims to promote programming as a culture among students by conducting weekly sessions (CodeClasses and contests). It also aims to improve performance of IIIT-D students in external contests.</p>
-                            <p><h4>Coordinators</h4>
-                            <ul>
-                                <li>Ambar Pal</li>
-                                <li>Aditi Mithal</li>
-                                <li>Anmol Singh</li>
-                                <li>Parth Mittal </li>
-                                <li>Rounaq Jhunjhunu Wala</li>
-                                <li>Satyam Kumar</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/electoholics.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Electoholics<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Electoholics<i class="material-icons right">close</i></span>
-                            <p>stronuts, the astronomy club of IIIT-Delhi was started in October 2012 to provide a learning platform to students passionate about the skies above. By conducting night observations, organising quizzing competitions and group learning sessions, we seek to unravel the mysteries of the night! </p>
-                            <p><h4>Coordinators</h4>
-                            <ul>
-                                <li>Shubhankar R Butta</li>
-                                <li>Aryan Saini</li>
-                                <li>Ekansh Sareen</li>
-                                <li>Hasan Kamal </li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="test2" class="col s12">
-            <div class="container black lighten-2 white-text" style="padding:25px;;margin-top: 20px;">
-                <h3>Guidelines</h3>
-                <blockquote class="light" style="border-left-color: teal">At least Two Founders and Three Members for any club to exist. The members must then elect/select Two Club Coordinators among these 5 (or more) members.</blockquote>
-                <blockquote class="light" style="border-left-color: teal">There must be at least one activity per semester.</blockquote>
-                <blockquote class="light" style="border-left-color: teal">The internal website of the club should be regularly updated.  It shall at least have an updated list of club members, events list, budget details and contact details of coordinators.</blockquote>
-                <blockquote class="light" style="border-left-color: teal">If any club has a requirement of a visiting instructor, then there must be at least 15 interested students who will benefit from it.  </blockquote>
-                <blockquote class="light" style="border-left-color: teal">The tentative annual budget should be provided to the Student Council (when the new session starts).
-                    The budget can be ZERO depending on the nature of the group.
-                    The club must give a justification for the usage of money, and a Strong Justification if the requirement is more than Rs. 10,000.
-                    The detailed bifurcation of the budget should be set forward (how do you plan to use the money that you are stating in your plan).</blockquote>
-            </div>
-        </div>
-        <div id="test4" class="col s12">In Development</div>
-    </div>
+<div class="container black lighten-2 white-text" style="padding:25px;;margin-top: 20px;">
+    <h3>Guidelines</h3>
+    <blockquote class="light" style="border-left-color: teal">At least Two Founders and Three Members for any club to exist. The members must then elect/select Two Club Coordinators among these 5 (or more) members.</blockquote>
+    <blockquote class="light" style="border-left-color: teal">There must be at least one activity per semester.</blockquote>
+    <blockquote class="light" style="border-left-color: teal">The internal website of the club should be regularly updated.  It shall at least have an updated list of club members, events list, budget details and contact details of coordinators.</blockquote>
+    <blockquote class="light" style="border-left-color: teal">If any club has a requirement of a visiting instructor, then there must be at least 15 interested students who will benefit from it.  </blockquote>
+    <blockquote class="light" style="border-left-color: teal">The tentative annual budget should be provided to the Student Council (when the new session starts).
+        The budget can be ZERO depending on the nature of the group.
+        The club must give a justification for the usage of money, and a Strong Justification if the requirement is more than Rs. 10,000.
+        The detailed bifurcation of the budget should be set forward (how do you plan to use the money that you are stating in your plan).</blockquote>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="materialize/js/materialize.js"></script>
 <script src="materialize/js/init.js"></script>
-
 </body>
 </html>
+<!--<div class="row">-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light" >-->
+<!--<center><img class="activator responsive-img" src="img/byld.jpg" align="center" width="100px" height="100px"></center>-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Byld<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="http://byld.iiitd.edu.in/">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Byld<i class="material-icons right">close</i></span>-->
+<!--<p>Byld is IIIT-D's software dev club. Byld exists to  foster a community  of individuals at IIIT-D who solve problems through the innovative use of technology.</p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Aneesh Dogra</li>-->
+<!--<li>Sambhav Satija</li>-->
+<!--<li>Ankur Singh</li>-->
+<!--<li>Gurshabad Grover</li>-->
+<!--<li>Lohitaksh Parmar</li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light" >-->
+<!--<img class="activator responsive-img" src="img/FooBar.png" width="100px" height="100px">-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Foobar<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="foobar.iiitd.edu.in">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Foobar<i class="material-icons right">close</i></span>-->
+<!--<p>FooBar aims to promote programming as a culture among students by conducting weekly sessions (CodeClasses and contests). It also aims to improve performance of IIIT-D students in external contests.</p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Ambar Pal</li>-->
+<!--<li>Aditi Mithal</li>-->
+<!--<li>Anmol Singh</li>-->
+<!--<li>Parth Mittal </li>-->
+<!--<li>Rounaq Jhunjhunu Wala</li>-->
+<!--<li>Satyam Kumar</li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light">-->
+<!--<img class="activator" src="img/astronuts.png">-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Astronuts<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="#">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Astronuts<i class="material-icons right">close</i></span>-->
+<!--<p>stronuts, the astronomy club of IIIT-Delhi was started in October 2012 to provide a learning platform to students passionate about the skies above. By conducting night observations, organising quizzing competitions and group learning sessions, we seek to unravel the mysteries of the night! </p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Shubhankar R Butta</li>-->
+<!--<li>Aryan Saini</li>-->
+<!--<li>Ekansh Sareen</li>-->
+<!--<li>Hasan Kamal </li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light" >-->
+<!--<center><img class="activator responsive-img" src="img/trivalis.jpg" align="center" width="100px" height="100px"></center>-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Trivalis<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="#">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Trivalis<i class="material-icons right">close</i></span>-->
+<!--<p>Byld is IIIT-D's software dev club. Byld exists to  foster a community  of individuals at IIIT-D who solve problems through the innovative use of technology.</p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Aneesh Dogra</li>-->
+<!--<li>Sambhav Satija</li>-->
+<!--<li>Ankur Singh</li>-->
+<!--<li>Gurshabad Grover</li>-->
+<!--<li>Lohitaksh Parmar</li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light" >-->
+<!--<img class="activator responsive-img" src="img/machaan.png" width="100px" height="100px">-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Maachan<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="foobar.iiitd.edu.in">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Maachan<i class="material-icons right">close</i></span>-->
+<!--<p>FooBar aims to promote programming as a culture among students by conducting weekly sessions (CodeClasses and contests). It also aims to improve performance of IIIT-D students in external contests.</p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Ambar Pal</li>-->
+<!--<li>Aditi Mithal</li>-->
+<!--<li>Anmol Singh</li>-->
+<!--<li>Parth Mittal </li>-->
+<!--<li>Rounaq Jhunjhunu Wala</li>-->
+<!--<li>Satyam Kumar</li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s4 m4 l4">-->
+<!--<div class="card">-->
+<!--<div class="card-image waves-effect waves-block waves-light">-->
+<!--<img class="activator" src="img/electoholics.png">-->
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<span class="card-title activator grey-text text-darken-4">Electoholics<i class="material-icons right">more_vert</i></span>-->
+<!--<p><a href="#">Website</a></p>-->
+<!--</div>-->
+<!--<div class="card-reveal">-->
+<!--<span class="card-title grey-text text-darken-4">Electoholics<i class="material-icons right">close</i></span>-->
+<!--<p>stronuts, the astronomy club of IIIT-Delhi was started in October 2012 to provide a learning platform to students passionate about the skies above. By conducting night observations, organising quizzing competitions and group learning sessions, we seek to unravel the mysteries of the night! </p>-->
+<!--<p><h4>Coordinators</h4>-->
+<!--<ul>-->
+<!--<li>Shubhankar R Butta</li>-->
+<!--<li>Aryan Saini</li>-->
+<!--<li>Ekansh Sareen</li>-->
+<!--<li>Hasan Kamal </li>-->
+<!--</ul>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
