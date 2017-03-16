@@ -2129,6 +2129,7 @@
 
 .white-text {
   color: #FFFFFF !important;
+  background-color: #3FADA8;
 }
 
 .transparent {
@@ -2544,11 +2545,11 @@ html {
 
 ul:not(.browser-default) {
   padding-left: 0;
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 ul:not(.browser-default) li {
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 a {
@@ -3495,6 +3496,16 @@ input[type=range] + .thumb {
   margin-left: auto;
   left: auto;
   right: auto;
+  
+}
+.row .col.s12 .card.center{
+  transition: background-color 0.5s;
+}
+.row .col.s12 .card.center:hover{
+  background-color: #3FADA8;
+}
+.row .col.s12 .card.center:hover a{
+  color: white;
 }
 
 .row .col.offset-s1 {
