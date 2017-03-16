@@ -18,6 +18,17 @@ p {
     line-height: 2rem;
 }
 
+.hosteltable{
+    border:1px solid black;
+    width: 60%;
+    
+}
+.hosteltable th{
+    border:1px solid black;  
+}
+.hosteltable td{
+    border:1px solid black;  
+}
 .button-collapse {
     color: #26a69a;
 }
