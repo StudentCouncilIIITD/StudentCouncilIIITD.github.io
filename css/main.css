@@ -19,15 +19,15 @@ p {
 }
 
 .hosteltable{
-    border:1px solid black;
+    border:1px solid #3FADA8;
     width: 60%;
-    
+
 }
 .hosteltable th{
-    border:1px solid black;  
+    border:1px solid #3FADA8;  
 }
 .hosteltable td{
-    border:1px solid black;  
+    border:1px solid #3FADA8;  
 }
 .button-collapse {
     color: #26a69a;
