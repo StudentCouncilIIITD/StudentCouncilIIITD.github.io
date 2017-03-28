@@ -106,7 +106,6 @@ th {
 }
 
 html {
-  background-color: white;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -146,6 +145,26 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  /*background-image: url(img/5.jpg) ; background-size: cover !important;*/
+}
+
+
+/*.bg{
+  margin-top: 100%;
+  background-image: url(img/5.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}*/
+
+.coverall{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 8%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #3FADA8;
+  margin-left: 18%;
+  margin-right: 18%;
+
+
 }
 
 a {
@@ -2402,7 +2421,7 @@ a.box:active {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
+  margin-top: 17%;
   width: 100%;
 }
 
@@ -2462,11 +2481,17 @@ a.box:active {
 }
 
 .notification {
-  background-color: whitesmoke;
+  background-color: black;
   border-radius: 3px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
+  transition: background-color 0.3s;
 }
+.notification:hover{
+  background-color: #9f5787;
+  }
+
+  
 
 .notification:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -2509,23 +2534,43 @@ a.box:active {
 }
 
 .notification.is-dark {
-  background-color: #363636;
+  background-color: black;
   color: whitesmoke;
+  transition: background-color 0.3s;
+}
+
+.notification.is-dark:hover{
+  background-color: #337FA0;
 }
 
 .notification.is-primary {
-  background-color: #00d1b2;
+  background-color: black;
   color: #fff;
+  transition: background-color 0.3s;
+}
+
+.notification.is-primary:hover{
+  background-color: #00d1b2;
 }
 
 .notification.is-info {
-  background-color: #3273dc;
+  background-color: black;
   color: #fff;
+  transition: background-color 0.3s;
+}
+
+.notification.is-info:hover{
+  background-color: #3273dc
 }
 
 .notification.is-success {
-  background-color: #23d160;
+  background-color: black;
   color: #fff;
+  transition: background-color 0.3s;
+}
+
+.notification.is-success:hover{
+  background-color: #23d160; 
 }
 
 .notification.is-warning {
@@ -2534,8 +2579,13 @@ a.box:active {
 }
 
 .notification.is-danger {
-  background-color: #ff3860;
+  background-color: black;
   color: #fff;
+  transition: background-color 0.3s;
+}
+
+.notification.is-danger:hover{
+  background-color: #ff3860;
 }
 
 .progress {
@@ -6426,6 +6476,7 @@ label.panel-block:hover {
 .hero.is-success {
   background-color: #23d160;
   color: #fff;
+
 }
 
 .hero.is-success a,
