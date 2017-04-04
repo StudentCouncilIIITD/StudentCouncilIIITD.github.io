@@ -155,14 +155,14 @@ body {
   background-size: cover;
 }*/
 
-.coverall{
+/*.container{
   font-family: 'Quicksand', sans-serif;
   margin-top: 8%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   background-color: #3FADA8;
   margin-left: 18%;
-  margin-right: 18%;
+  margin-right: 18%;*/
 
 
 }
@@ -5710,6 +5710,9 @@ label.panel-block:hover {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 8%;
+  background-color: #3FADA8;
 }
 
 .tile.is-ancestor:last-child {
